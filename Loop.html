@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>For/While Looping</title>
+    <meta charset="utf-8" />
+    <style>
+    </style>
+    <script language="javascript" type="text/javascript">
+        var star = " ";
+        var i = 0;
+
+        function StarD() {
+            while (i < 14) {
+                i++;
+                for (j = i; j > 0; j--) {
+                    star += "x"
+                }
+                star += "<br>"
+                document.getElementById('placement').innerHTML = (star);
+            }
+        }
+
+        function StarU() {
+            var restar = ""
+            i++;
+            while (i > 0) {
+                i--;
+                for (j = 0; j < i; j++) {
+                    restar += "x"
+                }
+                restar += "<br>"
+                document.getElementById('placement2').innerHTML = (restar);
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Friday's Bonus</h1>
+    <br />
+
+    <button type="button" onclick="StarD()">
+        Hit first to Display \
+    </button><br />
+    <button type="button" onclick="StarU()">
+        Hit second to Display /
+    </button><br />
+    <p id="placement">Here</p>
+    <p id="placement2">Here once the first set has gone.</p>
+</body>
+</html>
