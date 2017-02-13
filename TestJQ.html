@@ -86,6 +86,36 @@
                 var childN = child.length;
                 $("#resultC span:first").text(childN);
             });
+
+            $("#slideH").click(function () {
+                // Insert the source DIV element into the
+                // destination DIV element.
+                $("#movH").slideToggle(5000);
+            });
+
+            $("#slideI").click(function () {
+                // Insert the source DIV element into the
+                // destination DIV element.
+                $("#movI").slideToggle(5000);
+            });
+
+            $("#slideJ").click(function () {
+                // Insert the source DIV element into the
+                // destination DIV element.
+                $("#movJ").slideToggle(5000);
+            });
+
+            $("#slideK").click(function () {
+                // Insert the source DIV element into the
+                // destination DIV element.
+                $("#movK").slideToggle(5000);
+            });
+
+            $("#slideL").click(function () {
+                // Insert the source DIV element into the
+                // destination DIV element.
+                $("#movL").slideToggle(5000);
+            });
             
         });
         
@@ -94,96 +124,111 @@
 </head>
 <body>
     <h1>JQuery Assignments for Friday</h1>
+    <p>Click on the problem name to slide toggle the set problem.</p>
     <br />
-    <h2>Problem h:</h2>
-    <!-- This set of code is for problem #:h -->
-    <div id="source" style="width:180px; background-color:crimson;">
-        <h3 style="color:white;">I am the Source DIV, I am going to move to the Destination DIV.</h3>
-    </div>
-    <p>-------------------------------------------------------------------------------------------</p>
-    <div id="destination" style="width:512px; height:305px; background-color:steelblue;">
-        <h1 style="color:white;">I am the Destination DIV. Also A H1 tag(1st)</h1>
-    </div>
-    <br />
-    <button id="ph">Click to Merge the DIVs Above</button>
-
-    <br />
-    <p>-------------------------------------------------------------------------------------------</p>
-    <h2>Problem i:</h2>
-    <p>
-        Click on the DIV Tag(Color: Tan) to view results, if you select any of the P Tag(Other Colors) it will result in 0,<br />
-        as the P Tag has no children.
-    </p>
-    <!-- This set of code is for problem #:i -->
-    <!-- The color setup looks like a Resistor -->
-    <div id="selected" style="width:150px; height:255px;">
+    <h2 id="slideH">Problem h:</h2>
+    <span id="movH">
+        <!-- This set of code is for problem #:h -->
+        <div id="source" style="width:180px; background-color:crimson;">
+            <h3 style="color:white;">I am the Source DIV, I am going to move to the Destination DIV.</h3>
+        </div>
+        <p>-------------------------------------------------------------------------------------------</p>
+        <div id="destination" style="width:512px; height:305px; background-color:steelblue;">
+            <h1 style="color:white;">I am the Destination DIV. Also A H1 tag(1st)</h1>
+        </div>
         <br />
-        <p style="background-color:red;">Red</p>
-        <p style="background-color:white;">White</p>
-        <p style="background-color:green; color:white;">Green</p>
-        <p style="background-color:black; color:white;">Black</p>
-        <p style="background-color:blue; color:white;">Blue</p>
-        <p style="background-color:orange;">Orange</p>
-    </div>
-    <p id="howM">
-        <span id="result">
-            Found <span># of</span> 'P Tag' children in the aboves <span>Tag</span>.
-        </span>
-    </p>
+        <button id="ph">Click to Merge the DIVs Above</button>
 
+    </span>
+    
     <br />
     <p>-------------------------------------------------------------------------------------------</p>
-    <h2>Problem j:</h2>
-    <br />
-    <!-- This set of code is for problem #:j -->
-    <div id="iddiv">
-        <span>This is a span</span>
-        <p>This is a Paragraph</p>
-        <button id="button1">Click to see the effect</button>
-    </div>
-    <p id="AllDiv">
-        <span id="resultB">
-            Found <span># of</span> Elements in the above DIV.<br />
-        </span>
-    </p>
+    <h2 id="slideI">Problem i:</h2>
+    <span id="movI">
+        <p>
+            Click on the DIV Tag(Color: Tan) to view results, if you select any of the P Tag(Other Colors) it will result in 0,<br />
+            as the P Tag has no children.
+        </p>
+        <!-- This set of code is for problem #:i -->
+        <!-- The color setup looks like a Resistor -->
+        <div id="selected" style="width:150px; height:255px;">
+            <br />
+            <p style="background-color:red;">Red</p>
+            <p style="background-color:white;">White</p>
+            <p style="background-color:green; color:white;">Green</p>
+            <p style="background-color:black; color:white;">Black</p>
+            <p style="background-color:blue; color:white;">Blue</p>
+            <p style="background-color:orange;">Orange</p>
+        </div>
+        <p id="howM">
+            <span id="result">
+                Found <span># of</span> 'P Tag' children in the aboves <span>Tag</span>.
+            </span>
+        </p>
 
-    <p>-------------------------------------------------------------------------------------------</p>
-    <h2>Problem k:</h2>
-    <br />
-    <!-- This set of code is for problem #:k -->
-    <button id="left"><</button>
-    <button id="up">^</button>
-    <button id="down">V</button>
-    <button id="right">></button>
-    <div class="block">
-        <h1 style="text-align:center">+</h1>
-    </div>
-
-    <p>the moveable DIV has 1 "h1" tags. (2nd)</p>
-
-    <br />
-    <br />
-    <br />
-    <br />
+    </span>
+    
     <br />
     <p>-------------------------------------------------------------------------------------------</p>
-    <h2>Problem l:</h2>
+    <h2 id="slideJ">Problem j:</h2>
+    <br />
+    <span id="movJ">
+        <!-- This set of code is for problem #:j -->
+        <div id="iddiv">
+            <span>This is a span</span>
+            <p>This is a Paragraph</p>
+            <button id="button1">Click to see the effect</button>
+        </div>
+        <p id="AllDiv">
+            <span id="resultB">
+                Found <span># of</span> Elements in the above DIV.<br />
+            </span>
+        </p>
+    </span>
+
+    <p>-------------------------------------------------------------------------------------------</p>
+    <h2 id="slideK">Problem k:</h2>
+    <br />
+    <span id="movK">
+        <!-- This set of code is for problem #:k -->
+        <button id="left"><</button>
+        <button id="up">^</button>
+        <button id="down">V</button>
+        <button id="right">></button>
+        <div class="block">
+            <h1 style="text-align:center">+</h1>
+        </div>
+
+        <p>the moveable DIV has 1 "h1" tags. (2nd)</p>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </span>
+    
+    <p>-------------------------------------------------------------------------------------------</p>
+    <h2 id="slideL">Problem l:</h2>
     <!-- This set of code is for extra problem #:l -->
-    <h1>abc</h1>
-    <div style="width:150px; height:255px;">
-        <h1>div-1 (3rd)</h1>
-        <h1>div-2 (4th)</h1>
-    </div>
-    <h1>xyz</h1>
-    <br />
-    <p id="h1Find">
-        Click the button below to find all 'H1' Tags in all DIVs.
-        <span id="resultC">
-            Found <span># of</span> 'H1 Tag' children in <b><u>ALL</u></b> DIVs.<br />
-        </span>
-    </p>
-    <br />
-    <button id="button2">Find</button>
+    <span id="movL">
+        <h1>abc</h1>
+        <div style="width:150px; height:255px;">
+            <h1>div-1 (3rd)</h1>
+            <h1>div-2 (4th)</h1>
+        </div>
+        <h1>xyz</h1>
+        <br />
+        <p id="h1Find">
+            Click the button below to find all 'H1' Tags in all DIVs.
+            <span id="resultC">
+                Found <span># of</span> 'H1 Tag' children in <b><u>ALL</u></b> DIVs.<br />
+            </span>
+        </p>
+        <br />
+        <button id="button2">Find</button>
+        <br />
+    </span>
     <br />
     <br />
 </body>
